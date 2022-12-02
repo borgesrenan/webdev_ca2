@@ -47,19 +47,19 @@
             </div>
             <div class="col-lg-2 order-1 mb-3 d-flex flex-column gap-2 mx-auto align-items-stretch">
                 <button name="1.2.1" class="btn btn-success btn-block"
-                    data-sql="SELECT * FROM employees WHERE hire_date = '1991-05-01'"
+                    data-sql="SELECT &#42; FROM employees WHERE hire_date = '1991-05-01'"
                     onclick="reply_click(this)">1.2.1</button>
                 <button name="1.2.2" class="btn btn-success btn-block"
-                    data-sql="SELECT emp_id, title, COUNT(*) AS myCount FROM titles GROUP BY emp_id HAVING myCount > 2 LIMIT 100"
+                    data-sql="SELECT emp_id, title, COUNT(&#42;) AS myCount FROM titles GROUP BY emp_id HAVING myCount > 2 LIMIT 100"
                     onclick="reply_click(this)">1.2.2</button>
                 <button name="1.2.3" class="btn btn-success btn-block"
-                    data-sql="SELECT * FROM employees WHERE gender = 'F' LIMIT 100"
+                    data-sql="SELECT &#42; FROM employees WHERE gender = 'F' LIMIT 100"
                     onclick="reply_click(this)">1.2.3</button>
                 <button name="1.2.4" class="btn btn-success btn-block"
-                    data-sql="SELECT * FROM employees WHERE last_name LIKE '%Simmel' AND hire_date < '1986-01-01'"
+                    data-sql="SELECT &#42; FROM employees WHERE last_name LIKE '&#37;Simmel' AND hire_date &lt; '1986-01-01'"
                     onclick="reply_click(this)">1.2.4</button>
                 <button name="1.2.5" class="btn btn-success btn-block"
-                    data-sql="SELECT COUNT(last_name) AS totalWithB FROM employees WHERE last_name LIKE 'B%'"
+                    data-sql="SELECT COUNT(last_name) AS totalWithB FROM employees WHERE last_name LIKE 'B&#37;'"
                     onclick="reply_click(this)">1.2.5</button>
                 <button name="1.2.6" class="btn btn-success btn-block" data-sql="CREATE TABLE emp_training (
                         trainer_id integer PRIMARY KEY AUTOINCREMENT,
